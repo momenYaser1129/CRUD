@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="demo-lite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container container1">
+      <!-- <div class="row row1 mb-3">
+        <h1>CRUD Application</h1>
+      </div> -->
+      <div class="form p-5 w-75 m-auto">
+        <div>
+          <label for="productImg">
+            <h6>Product Name</h6>
+          </label>
+          <input
+            type="file"
+            class="form-control mb-4 mt-1"
+            id="productImg"
+            accept="jpg/png"
+          />
+        </div>
+        <div>
+          <label for="productName">
+            <h6>Product Name</h6>
+          </label>
+          <input type="text" class="form-control mb-4 mt-1" id="productName" />
+        </div>
+        <div>
+          <label for="productOldPrice">
+            <h6>Product Old Price</h6>
+          </label>
+          <input
+            type="number"
+            class="form-control mb-4 mt-1"
+            id="productOldPrice"
+          />
+        </div>
+        <div>
+          <label for="productNewPrice">
+            <h6>Product New Price</h6>
+          </label>
+          <input
+            type="number"
+            class="form-control mb-4 mt-1"
+            id="productNewPrice"
+          />
+        </div>
+        <div>
+          <label for="productDescription">
+            <h6>Product Description</h6>
+          </label>
+          <textarea
+            type="text"
+            class="form-control mb-4 mt-1"
+            id="productDescription"
+          ></textarea>
+        </div>
+        <div>
+          <label for="productCount">
+            <h6>Product Count</h6>
+          </label>
+          <input
+            type="number"
+            class="form-control mb-4 mt-1 w-25"
+            id="productCount"
+          />
+        </div>
+        <div class="">
+          <label for="productSaleOn">
+            <h6>Out Of Stock</h6>
+          </label>
+          <input
+            name="radio"
+            type="radio"
+            class="mb-4 mt-1 me-3 form-check-input"
+            id="productSaleOn"
+            value="out"
+          />
+          <label for="productSaleOff">
+            <h6>In Stock</h6>
+          </label>
+          <input
+            name="radio"
+            type="radio"
+            class="mb-4 mt-1 form-check-input"
+            id="productSaleOff"
+            value="in"
+          />
+        </div>
+        <div class="my-btn">
+          <button
+            id="addProduct"
+            onclick="addProduct()"
+            class="btn btn1 btn-success px-3 me-2"
+          >
+            <b>Add Product</b>
+          </button>
+          <button onclick="deleteAll()" class="btn btn2 btn-danger px-3">
+            <b>Delete All</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="the-data mb-5">
+      <div class="container2">
+        <div class="row row-1 mb-5">
+          <div>
+            <h1 class="h-1 text-center text-light bg-danger">Products</h1>
+          </div>
+        </div>
+        <div class="row" id="theRow"></div>
+      </div>
+    </section>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="demo-lite.js"></script>
+  </body>
+</html>
